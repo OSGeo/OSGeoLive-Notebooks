@@ -1,4 +1,4 @@
-### IPYthon Notebook & GRASS ###
+### IPYthon Notebook & GRASS GIS ###
 This directory contains few examples on how to run GRASS GIS tools from inside an IPython Notebook.
 examples for now include :
 * GRASS_init
