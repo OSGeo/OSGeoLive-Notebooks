@@ -13,3 +13,4 @@ This will start a browser pointing to the IPython Notebook dashboard running on 
 ![Image](http://download.osgeo.org/livedvd/data/ipython/screenshot/IPython_Notebook_dashboard_1024X768.png)
 
 From the OSGeo live you can upgrade to the latest version of this repository running the command ```!git pull``` from the directory : ```/home/user/ipython/notebooks``` or directly from inside an IPython notebook.
+
