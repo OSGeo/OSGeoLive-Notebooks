@@ -1,5 +1,5 @@
 ###OSGeo-live###
-This directory host a set of notebooks that are used in the OSGeo-live project to demostrate usage and capabilities of *Open Source Geospatial Tools* installed on the *OSGeo-Live*.
+This directory host a set of notebooks that are used in the *[OSGeo-live](http://live.osgeo.org/en/index.html)* project to demostrate usage and capabilities of *Open Source Geospatial Tools* installed on the *OSGeo-Live*.
 To start the *IPython Notebook* server on the *OSGeo-Live*, use the *GEOSPATIAL* menu *start ipython notebook*. 
 To access to the server select in the same menu *ipython notebook* this will start a browser pointing to the IPython Notebook dashboard running on ```htpp://localhost:12345``` .
 
