@@ -47,17 +47,23 @@ def vlayerInfo(map,layer=1):
             } #'title' : map_title
     return info
 
+
 def rlayerInfo(map):
-    raster_info = !r.info map=basins -g
-    raster_info = list2dict(raster_info)
+    map_region = !r.info map={map} -g
+    map_region = list2dict(map_region)
     
     map_range = !r.info map={map} -r
     map_range=list2dict(map_range)
-    raster_info['range'] = map_range
     
     map_history = !r.info map={map} -h
-    raster_info['history'] = '\n'.join(map_history)
-    return raster_info
+    map_history = '\n'.join(map_history)
+    
+    info = {'region' : map_region,
+            'range' : map_range,
+	    'history' : map_history
+            } #'title' : map_title
+    return info
+
 
 def region2dict(rast=None, vect=None):
     if rast:
@@ -76,10 +82,12 @@ def region2dict(rast=None, vect=None):
     return regiondict
 
 
+
 def makeImage(mapname='', maptype='raster', lcolor='grey', vcolor='grey', vsize=1, icon='basic/diamond', 
               maptitle='', region=None, gridsize=1000, title_at=(45,95), legend_at=(22,65,8,10)):
     if not region:
         try:
+            print 'attempt'
             array_info = rlayerInfo(mapname)
             n=array_info['north']
             s=array_info['south'] 
@@ -88,15 +96,18 @@ def makeImage(mapname='', maptype='raster', lcolor='grey', vcolor='grey', vsize=
         except:
             print 'no region boundary provided and unable to retrieve map layer region, using default region settings'
     else:
-        region=region2dict()
         n=region['north']
         s=region['south'] 
         w=region['west'] 
         e=region['east']
 
     !rm -rf {mapname}.png
+    !rm -rf overlay.png
     !g.region n={n} s={s} w={w} e={e} -a --q
-    !d.mon start=cairo --q output={mapname}.png
+    if maptype == 'overlay':
+        !d.mon start=cairo --q output=overlay.png
+    else:
+        !d.mon start=cairo --q output={mapname}.png
     if maptype=='raster':
         !g.region rast={mapname} n={n} s={s} w={w} e={e} -a --q
         !d.rast map={mapname} --q
@@ -112,4 +123,7 @@ def makeImage(mapname='', maptype='raster', lcolor='grey', vcolor='grey', vsize=
     !d.grid size={gridsize} color=blue --q
     !d.text at={title_at[0]},{title_at[1]} text={maptitle} color=red --q
     !d.mon stop=cairo --q
-    return Image('map.png')
+    if maptype!='overlay':
+        return Image({mapname}+'.png')
+    else:
+        return Image('overlay.png')
