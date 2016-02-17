@@ -18,7 +18,7 @@ A unique feature of this tutorial is the use of Python based software tools for 
 - Software should be installed prior to traveling to the workshop (instructions below)
 
 ### Software Requirements
-** Please note that PySAL is pre-installed now  feb2016
+**Please note that PySAL is pre-installed here -- feb2016
 
 
 For the workshop we will require the following packages be installed
