@@ -1,5 +1,0 @@
-@interactive
-def sorter(string='Hello', reverse=False):
-    print ''.join(sorted(string, reverse=reverse)).strip()
-    
-sorter

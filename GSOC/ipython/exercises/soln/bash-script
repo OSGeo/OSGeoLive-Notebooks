@@ -1,3 +1,0 @@
-%%bash
-date
-echo "My current directory is:" $PWD
