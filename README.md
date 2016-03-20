@@ -1,6 +1,7 @@
-###Jupyter Notebooks###
+###OSGeo-live###
+This directory hosts a set of **[IPython Notebooks](http://ipython.org/notebook.html)** that demonstrate the *Open Source Geospatial Tools* capabilities on **[OSGeo-live](http://live.osgeo.org/en/index.html)**.
 
-In this repository are stored a set of [Jupyter notebooks](http://jupyter.org/) to demostrate the use of open source geospatial tools.
-The ```OSGeo-live``` directory host notebooks that can be executed on the OSGeo live project. 
-Other Jupyter Notebooks, running open source tools not installed on the live will be stored in the current directory.
-This repository can be rendered as static html using the  [NBViewer](http://nbviewer.jupyter.org/github/OSGeo/OSGeoLive-Notebooks/tree/master/) service.
+To start the *Jupyter Notebook* server on *OSGeo-Live*, use the *GEOSPATIAL* menu item *start Jupyter Notebook*. 
+On the same menu, select *Jupyter Notebook* to open a browser pointing to the *Jupyter Notebook* dashboard running on ```http://localhost:8883``` .
+
+From OSGeo-Live you can upgrade to the latest version of this repository by running the command ```git pull``` from the notebook directory : ```/home/user/jupyter/notebooks```.
