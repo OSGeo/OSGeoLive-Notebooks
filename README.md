@@ -1,4 +1,7 @@
 ###OSGeo-live###
+
+[logo]: http://live.osgeo.org/_images/banner.png "OSGeoLive"
+
 This directory hosts a set of **[IPython Notebooks](http://ipython.org/notebook.html)** that demonstrate the *Open Source Geospatial Tools* capabilities on **[OSGeo-live](http://live.osgeo.org/en/index.html)**.
 
 To start the *Jupyter Notebook* server on *OSGeo-Live*, use the *GEOSPATIAL* menu item *start Jupyter Notebook*. 
