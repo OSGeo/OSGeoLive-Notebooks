@@ -1,6 +1,7 @@
 # Introduction to geospatial data analysis with GeoPandas and the PyData stack
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jorisvandenbossche/geopandas-tutorial/master)
+ &nbsp; reprinted 2019; osgeolive Jupyter gnu/linux 
 
 ## Tutorial on geospatial data manipulation with Python
 
