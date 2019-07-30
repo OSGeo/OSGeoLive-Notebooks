@@ -34,6 +34,7 @@ Following this tutorial will require recent installations of:
 - geoplot
 - [Jupyter Notebook](http://jupyter.org)
 
+(*note* pre-installed here)  &nbsp; 
 If you do not yet have these packages installed, I recommend to use the [conda](http://conda.pydata.org/docs/intro.html) package manager to install all the requirements 
 (you can install [miniconda](http://conda.pydata.org/miniconda.html) or install the (larger) Anaconda
 distribution, found at https://www.anaconda.com/download/).
