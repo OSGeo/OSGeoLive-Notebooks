@@ -1,11 +1,11 @@
 2019 aug; osgeolive 13 edition
 
-These example notebooks include code snippets from the Cartopy documentation,
-and are reproduced here, with the following Cartopy v0.17 LICENSE.txt
+These example notebooks include code snippets from the Iris documentation,
+and are reproduced here, with the following Iris 2.2 LICENSE.txt
 
 
 --
-Cartopy documentation and examples
+Iris documentation and examples
 
 All documentation, examples and sample data found on this website 
 and in source repository are licensed under the 
