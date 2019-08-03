@@ -107,4 +107,4 @@ Open Government License for public sector information
 
 --
 
-https://scitools.org.uk/cartopy/docs/v0.17/copyright.html
+https://scitools.org.uk/iris/docs/latest/copyright.html
