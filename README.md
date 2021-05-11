@@ -1,4 +1,4 @@
-###OSGeo-live###
+### OSGeoLive ###
 
 [logo]: http://live.osgeo.org/_images/banner.png "OSGeoLive"
 
