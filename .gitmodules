@@ -1,0 +1,3 @@
+[submodule "GRASS-GIS/python-grass-addon"]
+	path = GRASS-GIS/python-grass-addon
+	url = https://github.com/wenzeslaus/python-grass-addon.git
