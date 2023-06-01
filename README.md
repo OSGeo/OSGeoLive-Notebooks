@@ -1,8 +1,8 @@
 ### OSGeoLive Notebook Gallery ###
 
-[logo]: http://live.osgeo.org/_images/banner.png "OSGeoLive"
+[logo]: https://live.osgeo.org/_images/banner.png "OSGeoLive"
 
-This directory hosts a set of **[Jupyter Notebooks](https://jupyter.org/)** that demonstrate the *Open Source Geospatial Tools* capabilities on **[OSGeoLive](http://live.osgeo.org/en/index.html)**.
+This directory hosts a set of **[Jupyter Notebooks](https://jupyter.org/)** that demonstrate the *Open Source Geospatial Tools* capabilities on **[OSGeoLive](https://live.osgeo.org/en/index.html)**.
 
 To start the *Jupyter* server on *OSGeoLive*, use the menu item *Geospatial -> Spatial Tools -> Jupyter Notebook*. 
 
